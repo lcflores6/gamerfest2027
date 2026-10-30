@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/bootstrap-icons-1.13.2/bootstrap-icons.css">
+        <title>Gamer Fest ESPE 2027</title>
+    </head>
+
+    <body class="bg-body-secondary">
+        <div class="container-fluid container-lg bg-white shadow-sm px-2 px-md-4 py-3">
+
+            <!--Sección Encabezado-->
+            <header class="mb-3">
+                <div class="card rounded-5 border-dark">
+                    <div class="card-body py-2">
+                        <div class="row align-items-center g-2">
+
+                            <!--Marca: Gamer (Logo) Fest ESPE 2027-->
+                            <div class="col-12 col-lg-5">
+                                <div class="row align-items-center justify-content-center justify-content-lg-start g-2">
+                                    <div class="col-auto fs-3">Gamer</div>
+                                    <div class="col-3 col-md-2 col-lg-3">
+                                        <img src="img/logos/logo-gamer-fest-escudo.png" alt="Logo Gamer Fest ESPE" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="col-auto fs-3">Fest ESPE</div>
+                                    <div class="col-12 col-lg-auto text-center fs-5">2027</div>
+                                </div>
+                            </div>
+
+                            <!--Menú de Navegación-->
+                            <div class="col-12 col-lg-7">
+                                <div class="border border-dark rounded-5 p-2 d-flex align-items-center gap-2">
+                                    <nav class="flex-grow-1" aria-label="Principal">
+                                        <ul class="nav small justify-content-center justify-content-lg-end">
+                                            <li class="nav-item"><a class="nav-link px-1 py-0 link-primary" href="#informacion">Información</a></li>
+                                            <li class="nav-item text-secondary" aria-hidden="true">|</li>
+                                            <li class="nav-item"><a class="nav-link px-1 py-0 link-primary" href="#categorias">Categorías</a></li>
+                                            <li class="nav-item text-secondary" aria-hidden="true">|</li>
+                                            <li class="nav-item"><a class="nav-link px-1 py-0 link-primary" href="#premios">Premios</a></li>
+                                            <li class="nav-item text-secondary" aria-hidden="true">|</li>
+                                            <li class="nav-item"><a class="nav-link px-1 py-0 link-primary" href="#auspiciantes">Auspiciantes</a></li>
+                                            <li class="nav-item text-secondary" aria-hidden="true">|</li>
+                                            <li class="nav-item"><a class="nav-link px-1 py-0 link-primary" href="#ubicacion">Ubicación del evento</a></li>
+                                            <li class="nav-item text-secondary" aria-hidden="true">|</li>
+                                            <li class="nav-item"><a class="nav-link px-1 py-0 link-primary" href="#inscripcion">Formulario de Inscripción</a></li>
+                                            <li class="nav-item text-secondary" aria-hidden="true">|</li>
+                                            <li class="nav-item"><a class="nav-link px-1 py-0 link-primary" href="#contactos">Contactos</a></li>
+                                        </ul>
+                                    </nav>
+                                    <button class="btn btn-outline-dark rounded-4 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuMovil" aria-controls="menuMovil" aria-label="Abrir menú">
+                                        <i class="bi bi-list fs-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Menú desplegable móvil (botón hamburguesa)-->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="menuMovil" aria-labelledby="menuMovilTitulo">
+                    <div class="offcanvas-header">
+                        <h2 class="offcanvas-title fs-5" id="menuMovilTitulo">Gamer Fest ESPE 2027</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a class="text-decoration-none" href="#informacion" data-bs-dismiss="offcanvas">Información</a></li>
+                            <li class="list-group-item"><a class="text-decoration-none" href="#categorias" data-bs-dismiss="offcanvas">Categorías</a></li>
+                            <li class="list-group-item"><a class="text-decoration-none" href="#premios" data-bs-dismiss="offcanvas">Premios</a></li>
+                            <li class="list-group-item"><a class="text-decoration-none" href="#auspiciantes" data-bs-dismiss="offcanvas">Auspiciantes</a></li>
+                            <li class="list-group-item"><a class="text-decoration-none" href="#ubicacion" data-bs-dismiss="offcanvas">Ubicación del evento</a></li>
+                            <li class="list-group-item"><a class="text-decoration-none" href="#inscripcion" data-bs-dismiss="offcanvas">Formulario de Inscripción</a></li>
+                            <li class="list-group-item"><a class="text-decoration-none" href="#contactos" data-bs-dismiss="offcanvas">Contactos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+
+                <!--Sección Información-->
+                <section id="informacion" class="mb-4">
+                    <h2 class="border border-dark rounded-pill text-end px-3 py-0 fs-6 fw-normal mb-3">Información</h2>
+
+                    <h1 class="d-lg-none fs-2 fw-normal mb-3">¡Juega, Compite y Gana!</h1>
+
+                    <div class="row g-3 align-items-center">
+
+                        <!--Pastillas: fecha, horario y ubicación-->
+                        <div class="col-5 col-lg-3 order-lg-2">
+                            <div class="card rounded-pill border-dark mb-2">
+                                <div class="card-body py-2 px-3 small">Fecha: 15 de mayo de 2027</div>
+                            </div>
+                            <div class="card rounded-pill border-dark mb-2">
+                                <div class="card-body py-2 px-3 small">Horario: 09:00 - 17:00</div>
+                            </div>
+                            <div class="card rounded-pill border-dark">
+                                <div class="card-body py-2 px-3 small">Ubicación: ESPE Latacunga</div>
+                            </div>
+                        </div>
+
+                        <!--Mensaje de invitación-->
+                        <div class="col-7 col-lg-7 order-lg-1">
+                            <h1 class="d-none d-lg-block display-5 fw-normal mb-3">¡Juega, Compite y Gana!</h1>
+                            <div class="card rounded-4 border-dark">
+                                <div class="card-body text-center d-flex align-items-center justify-content-center">
+                                    <p class="card-text">Te invitamos al Gamer Fest ESPE 2027, el torneo universitario donde podrás demostrar tu talento en MOBA, Shooter, Lucha y Deportes. ¡Forma tu equipo y participa!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Círculo de inscripción-->
+                        <div class="col-12 col-lg-2 order-lg-3">
+                            <div class="row justify-content-center">
+                                <div class="col-6 col-md-3 col-lg-12">
+                                    <a href="#inscripcion" class="btn btn-outline-dark rounded-circle ratio ratio-1x1 p-0 fs-5">
+                                        <span class="d-flex align-items-center justify-content-center text-center">¡Inscríbete<br>Ahora!</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Sección Categorías-->
+                <section id="categorias" class="mb-4">
+                    <h2 class="border border-dark rounded-pill text-end px-3 py-0 fs-6 fw-normal mb-3">Categorías</h2>
+
+                    <div class="row row-cols-1 row-cols-lg-4 g-3">
+
+                        <!--Categoría MOBA-->
+                        <div class="col">
+                            <article class="card rounded-5 border-dark h-100">
+                                <div class="row g-0 flex-lg-column h-100 align-items-center">
+                                    <div class="col-6 col-lg-12 p-2">
+                                        <img src="img/categorias/moba.png" alt="MOBA" class="img-fluid rounded-4">
+                                    </div>
+                                    <div class="col-6 col-lg-12 p-2">
+                                        <div class="d-flex flex-wrap align-items-center gap-2 justify-content-start justify-content-lg-between mb-2">
+                                            <h3 class="fs-5 fw-normal mb-0">MOBA</h3>
+                                            <span class="border border-dark rounded-pill px-2 small">Equipos 5 vs 5</span>
+                                        </div>
+                                        <p class="border border-dark rounded-4 p-2 mb-0">Estrategia en arena por equipos</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Categoría SHOOTER-->
+                        <div class="col">
+                            <article class="card rounded-5 border-dark h-100">
+                                <div class="row g-0 flex-row-reverse flex-lg-column h-100 align-items-center">
+                                    <div class="col-6 col-lg-12 p-2">
+                                        <img src="img/categorias/shooter.png" alt="Shooter" class="img-fluid rounded-4">
+                                    </div>
+                                    <div class="col-6 col-lg-12 p-2 text-end text-lg-start">
+                                        <div class="d-flex flex-wrap flex-row-reverse flex-lg-row align-items-center gap-2 justify-content-start justify-content-lg-between mb-2">
+                                            <h3 class="fs-5 fw-normal mb-0">SHOOTER</h3>
+                                            <span class="border border-dark rounded-pill px-2 small">Equipos 5 vs 5</span>
+                                        </div>
+                                        <p class="border border-dark rounded-4 p-2 mb-0">Duelos tácticos de precisión y trabajo en equipo</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Categoría LUCHA-->
+                        <div class="col">
+                            <article class="card rounded-5 border-dark h-100">
+                                <div class="row g-0 flex-lg-column h-100 align-items-center">
+                                    <div class="col-6 col-lg-12 p-2">
+                                        <img src="img/categorias/lucha.png" alt="Lucha" class="img-fluid rounded-4">
+                                    </div>
+                                    <div class="col-6 col-lg-12 p-2">
+                                        <div class="d-flex flex-wrap align-items-center gap-2 justify-content-start justify-content-lg-between mb-2">
+                                            <h3 class="fs-5 fw-normal mb-0">LUCHA</h3>
+                                            <span class="border border-dark rounded-pill px-2 small">Individual 1 vs 1</span>
+                                        </div>
+                                        <p class="border border-dark rounded-4 p-2 mb-0">Eliminatorias directas en formato de llaves</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!--Categoría DEPORTES-->
+                        <div class="col">
+                            <article class="card rounded-5 border-dark h-100">
+                                <div class="row g-0 flex-row-reverse flex-lg-column h-100 align-items-center">
+                                    <div class="col-6 col-lg-12 p-2">
+                                        <img src="img/categorias/deportes.png" alt="Deportes" class="img-fluid rounded-4">
+                                    </div>
+                                    <div class="col-6 col-lg-12 p-2 text-end text-lg-start">
+                                        <div class="d-flex flex-wrap flex-row-reverse flex-lg-row align-items-center gap-2 justify-content-start justify-content-lg-between mb-2">
+                                            <h3 class="fs-5 fw-normal mb-0">DEPORTES</h3>
+                                            <span class="border border-dark rounded-pill px-2 small">Individual</span>
+                                        </div>
+                                        <p class="border border-dark rounded-4 p-2 mb-0">Velocidad y habilidad en una cancha virtual</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Sección Premios-->
+                <section id="premios" class="mb-4">
+                    <h2 class="border border-dark rounded-pill text-end px-3 py-0 fs-6 fw-normal mb-3">Premios</h2>
+
+                    <div class="row g-3">
+
+                        <!--Condiciones generales-->
+                        <div class="col-12 col-lg-4">
+                            <h3 class="d-lg-none fs-5 fw-normal text-center">Condiciones generales para recibir los premios</h3>
+                            <div class="card rounded-5 border-dark border-opacity-50 h-100">
+                                <div class="card-body">
+                                    <h3 class="d-none d-lg-block fs-6 fw-normal">Condiciones generales para recibir los premios</h3>
+                                    <ul class="small mb-0">
+                                        <li>Tener la inscripción completa y el comprobante cargado.</li>
+                                        <li>Presentarse a la hora asignada, con 10 minutos de tolerancia.</li>
+                                        <li>Aceptar el reglamento. Si se comprueban trampas, se descalifica.</li>
+                                        <li>La decisión de los organizadores es final.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Premios por categoría-->
+                        <div class="col-12 col-lg-8">
+                            <div class="row row-cols-1 row-cols-md-2 g-3">
+
+                                <!--Premios MOBA-->
+                                <div class="col">
+                                    <article class="card rounded-5 border-dark h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-row-reverse flex-md-row justify-content-between align-items-center mb-3">
+                                                <span class="border border-dark rounded-pill px-3 py-1 small text-center">Eliminación directa</span>
+                                                <h3 class="fs-5 fw-normal mb-0">MOBA</h3>
+                                            </div>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li class="d-flex align-items-center gap-2 mb-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">1°</span>
+                                                    <span><span class="d-block">Posición</span>Trofeo + 5 Kits Gamer</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2 mb-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">2°</span>
+                                                    <span><span class="d-block">Posición</span>Medalla + 5 Órdenes de Consumo</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">3°</span>
+                                                    <span><span class="d-block">Posición</span>Medalla + Merchandising</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!--Premios SHOOTER-->
+                                <div class="col">
+                                    <article class="card rounded-5 border-dark h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-row-reverse flex-md-row justify-content-between align-items-center mb-3">
+                                                <span class="border border-dark rounded-pill px-3 py-1 small text-center">Puntos acumulados</span>
+                                                <h3 class="fs-5 fw-normal mb-0">SHOOTER</h3>
+                                            </div>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li class="d-flex align-items-center gap-2 mb-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">1°</span>
+                                                    <span><span class="d-block">Posición</span>Trofeo + Kit(s) Gamer</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2 mb-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">2°</span>
+                                                    <span><span class="d-block">Posición</span>Medalla(s) + Periférico(s)</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">3°</span>
+                                                    <span><span class="d-block">Posición</span>Medalla(s) + Merchandising</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!--Premios LUCHA-->
+                                <div class="col">
+                                    <article class="card rounded-5 border-dark h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-row-reverse flex-md-row justify-content-between align-items-center mb-3">
+                                                <span class="border border-dark rounded-pill px-3 py-1 small text-center">Eliminación directa</span>
+                                                <h3 class="fs-5 fw-normal mb-0">LUCHA</h3>
+                                            </div>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li class="d-flex align-items-center gap-2 mb-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">1°</span>
+                                                    <span><span class="d-block">Posición</span>Trofeo + Kit Gamer + Orden de Consumo</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2 mb-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">2°</span>
+                                                    <span><span class="d-block">Posición</span>Medalla + Periférico</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">3°</span>
+                                                    <span><span class="d-block">Posición</span>Medalla + Merchandising</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <!--Premios DEPORTES-->
+                                <div class="col">
+                                    <article class="card rounded-5 border-dark h-100">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-row-reverse flex-md-row justify-content-between align-items-center mb-3">
+                                                <span class="border border-dark rounded-pill px-3 py-1 small text-center">Grupos y llaves</span>
+                                                <h3 class="fs-5 fw-normal mb-0">DEPORTES</h3>
+                                            </div>
+                                            <ul class="list-unstyled small mb-0">
+                                                <li class="d-flex align-items-center gap-2 mb-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">1°</span>
+                                                    <span><span class="d-block">Posición</span>Trofeo + Kit Gamer + Combo de Comida</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2 mb-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">2°</span>
+                                                    <span><span class="d-block">Posición</span>Medalla + Periférico</span>
+                                                </li>
+                                                <li class="d-flex align-items-center gap-2">
+                                                    <span class="border border-dark rounded-circle px-2 py-1">3°</span>
+                                                    <span><span class="d-block">Posición</span>Medalla + Merchandising</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Sección Auspiciantes-->
+                <section id="auspiciantes" class="mb-4">
+                    <h2 class="border border-dark rounded-pill text-end text-uppercase px-3 py-0 fs-6 fw-normal mb-3">Auspiciantes</h2>
+
+                    <div class="row g-2 text-center">
+                        <div class="col-4">
+                            <h3 class="fs-6 fw-normal">PixelMin Store</h3>
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-4">
+                                    <img src="img/auspiciantes/pixelmin-store.png" alt="PixelMin Store" class="img-fluid rounded-circle">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="fs-6 fw-normal">MegaFibra Internet</h3>
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-4">
+                                    <img src="img/auspiciantes/megafibra-internet.png" alt="MegaFibra Internet" class="img-fluid rounded-circle">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="fs-6 fw-normal">Burger Car</h3>
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-lg-4">
+                                    <img src="img/auspiciantes/burger-car.png" alt="Burger Car" class="img-fluid rounded-circle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Sección Ubicación y Formulario-->
+                <div class="row g-3 mb-4">
+
+                    <!--Sección Ubicación del evento-->
+                    <section id="ubicacion" class="col-12 col-lg-6">
+                        <h2 class="border border-dark rounded-pill text-end text-uppercase px-3 py-0 fs-6 fw-normal mb-3">Ubicación del evento</h2>
+
+                        <div class="ratio ratio-16x9 bg-secondary-subtle mb-3">
+                            <iframe src="https://www.google.com/maps?q=Universidad+de+las+Fuerzas+Armadas+ESPE+Sede+Latacunga&output=embed" title="Mapa con la ubicación del Gamer Fest ESPE 2027" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="card rounded-5 border-dark">
+                            <div class="card-body">
+                                <p class="card-text mb-1">El Gamer Fest ESPE 2027 se realizará en el campus Belisario Quevedo de la Universidad de las Fuerzas Armadas ESPE, Sede Latacunga, en la ciudad de Latacunga, provincia de Cotopaxi. Las actividades se desarrollarán en el Bloque A, cuarto piso, donde estará la señalización del evento. Si el mapa no carga, usa el enlace alternativo para abrir la ubicación en Google Maps.</p>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Universidad+de+las+Fuerzas+Armadas+ESPE+Sede+Latacunga" target="_blank" rel="noopener noreferrer" class="card-link text-dark">Enlace alternativo Google Maps</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--Sección Formulario de Inscripción-->
+                    <section id="inscripcion" class="col-12 col-lg-6">
+                        <h2 class="border border-dark rounded-pill text-end text-uppercase px-3 py-0 fs-6 fw-normal mb-3">Formulario de Inscripción</h2>
+
+                        <div class="card border-dark">
+                            <div class="card-body">
+                                <form action="#" method="post" class="row g-3">
+                                    <div class="col-12 col-md-6">
+                                        <label for="nombres" class="form-label">Nombres</label>
+                                        <input type="text" class="form-control rounded-pill" id="nombres" name="nombres" placeholder="Tus nombres" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="apellidos" class="form-label">Apellidos</label>
+                                        <input type="text" class="form-control rounded-pill" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="correo" class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control rounded-pill" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="telefono" class="form-label">Teléfono</label>
+                                        <input type="tel" class="form-control rounded-pill" id="telefono" name="telefono" placeholder="099 000 0000" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="nickname" class="form-label">Nickname</label>
+                                        <input type="text" class="form-control rounded-pill" id="nickname" name="nickname" placeholder="Tu usuario de juego" required>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="categoria" class="form-label">Categoría</label>
+                                        <select class="form-select rounded-pill" id="categoria" name="categoria" required>
+                                            <option value="" selected disabled>Elige una categoría</option>
+                                            <option value="moba">MOBA (Equipos 5 vs 5)</option>
+                                            <option value="shooter">Shooter (Equipos 5 vs 5)</option>
+                                            <option value="lucha">Lucha (Individual 1 vs 1)</option>
+                                            <option value="deportes">Deportes (Individual)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="equipo" class="form-label">Nombre del equipo (opcional)</label>
+                                        <input type="text" class="form-control rounded-pill" id="equipo" name="equipo" placeholder="Solo para categorías por equipos">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="comprobante" class="form-label">Comprobante de inscripción</label>
+                                        <input type="file" class="form-control rounded-pill" id="comprobante" name="comprobante" accept=".jpg,.jpeg,.png,.pdf" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="reglamento" name="reglamento" required>
+                                            <label class="form-check-label" for="reglamento">Acepto el reglamento y las condiciones generales del evento.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-outline-dark rounded-pill w-100">Enviar inscripción</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+
+            <!--Sección Pie de Página-->
+            <footer id="contactos">
+                <div class="card rounded-top-5 border-dark">
+                    <div class="card-body">
+                        <div class="row align-items-center g-3">
+
+                            <!--Marca: Gamer (Logo) Fest ESPE 2027-->
+                            <div class="col-12 col-lg-6">
+                                <div class="row align-items-center justify-content-center justify-content-lg-start g-2">
+                                    <div class="col-auto">Gamer</div>
+                                    <div class="col-2 col-md-1 col-lg-2">
+                                        <img src="img/logos/logo-gamer-fest-escudo.png" alt="Logo Gamer Fest ESPE" class="img-fluid">
+                                    </div>
+                                    <div class="col-auto">Fest ESPE</div>
+                                    <div class="col-12 col-lg-auto text-center small">2027</div>
+                                </div>
+                            </div>
+
+                            <!--Redes sociales-->
+                            <div class="col-12 col-lg-6">
+                                <div class="row g-2 justify-content-center justify-content-lg-end">
+                                    
+
+<div class="d-flex justify-content-center gap-3 mb-3">
+                    
+                    
+                    <a href="https://wa.me/593968503860" target="_blank" rel="noopener" aria-label="WhatsApp"
+                    class="d-flex align-items-center justify-content-center rounded-circle shadow text-white text-decoration-none fs-4"
+                    style="width:48px; height:48px; background-color:#25D366;">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                                    
+                                    <div class="col-3 col-md-2 col-lg-3">
+                                        <a href="https://www.instagram.com/toribiouio" target="_blank" rel="noopener" aria-label="Instagram"
+                                        class="d-flex align-items-center justify-content-center rounded-circle shadow text-white text-decoration-none fs-4"
+                                        style="width:48px; height:48px; background-color:#E4405F;">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-3 col-md-2 col-lg-3">
+                                        <a href="https://www.facebook.com/Carnesalaparrillatoribio" target="_blank" rel="noopener" aria-label="Facebook"
+                                            class="d-flex align-items-center justify-content-center rounded-circle shadow text-white text-decoration-none fs-4"
+                                            style="width:48px; height:48px; background-color:#1877F2;">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="col-3 col-md-2 col-lg-3">
+                                        <a href="https://www.facebook.com/Carnesalaparrillatoribio" target="_blank" rel="noopener" aria-label="Facebook"
+                                            class="d-flex align-items-center justify-content-center rounded-circle shadow text-white text-decoration-none fs-4"
+                                            style="width:48px; height:48px; background-color:#1877F2;">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark rounded-circle ratio ratio-1x1 p-0">
+                                            <span class="d-flex align-items-center justify-content-center small">TikTok</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
