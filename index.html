@@ -447,6 +447,139 @@
                             </div>
                         </div>
                     </section>
+
+                    <!--Sección Formulario de inscripción-->
+        <section id="inscripcion" class="container py-5">
+            <h2 class="seccion-pill titulo"><i class="bi bi-pencil-square"></i>Formulario de inscripción</h2>
+            <div class="card">
+                <div class="card-body p-3 p-md-4">
+                    <div class="alert alert-info rounded-4" role="note"><i class="bi bi-info-circle-fill me-2"></i>Demostración: usa datos ficticios. La información no se guarda ni se envía a ningún servidor.</div>
+                    <form id="formInscripcion" method="dialog">
+                        <div class="row g-4">
+                        <!--Bloque 1: datos personales-->
+                        <div class="col-12 col-lg-6"><fieldset class="fs-bloque h-100"><legend><i class="bi bi-person-badge-fill me-1"></i>Datos personales</legend><div class="row g-3">
+                                <div class="col-12"><div class="form-floating">
+                                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,60}" autocomplete="off">
+                                    <label for="nombre">Nombre completo</label>
+                                    <div class="invalid-feedback">Solo letras, entre 3 y 60 caracteres.</div></div></div>
+                                <div class="col-12 col-md-6"><div class="form-floating">
+                                    <input type="email" id="correo" name="correo" class="form-control" placeholder="correo@ejemplo.com" required>
+                                    <label for="correo">Correo electrónico</label>
+                                    <div class="invalid-feedback">Escribe un correo válido, por ejemplo correo@ejemplo.com.</div></div></div>
+                                <div class="col-12 col-md-6"><div class="input-group has-validation"><span class="input-group-text">+593</span><div class="form-floating"><input type="tel" id="telefono" name="telefono" class="form-control" placeholder=" " required pattern="09[0-9]{8}" inputmode="numeric"><label for="telefono">Teléfono (09XXXXXXXX)</label></div><div class="invalid-feedback">Escribe 10 dígitos que empiecen con 09.</div></div></div>
+                                <div class="col-12 col-md-6"><div class="form-floating">
+                                    <input type="number" id="edad" name="edad" class="form-control" placeholder=" " required min="15" max="99">
+                                    <label for="edad">Edad</label>
+                                    <div class="invalid-feedback">Escribe una edad entre 15 y 99.</div></div></div>
+                                <div class="col-12 col-md-6"><div class="form-floating">
+                                    <input type="date" id="nacimiento" name="nacimiento" class="form-control" placeholder=" " required>
+                                    <label for="nacimiento">Fecha de nacimiento</label>
+                                    <div class="invalid-feedback">Elige tu fecha de nacimiento.</div></div></div>
+                                <div class="col-12"><div class="form-floating">
+                                    <input type="password" id="clave" name="clave" class="form-control" placeholder=" " required minlength="8" autocomplete="new-password">
+                                    <label for="clave">Contraseña para consultar tu estado</label>
+                                    <div class="invalid-feedback">Usa al menos 8 caracteres.</div></div></div>
+                                <div class="col-12"><div class="form-floating">
+                                    <input type="url" id="perfil" name="perfil" class="form-control" placeholder="https://" pattern="https?://.+">
+                                    <label for="perfil">Perfil de streaming o red (opcional)</label>
+                                    <div class="invalid-feedback">Escribe una URL completa que empiece con https://.</div></div></div>
+                        </div></fieldset></div>
+                        <!--Bloque 2: datos del torneo-->
+                        <div class="col-12 col-lg-6"><fieldset class="fs-bloque h-100"><legend><i class="bi bi-controller me-1"></i>Datos del torneo</legend><div class="row g-3">
+                                <div class="col-12 col-md-6">
+                                    <label for="categoria" class="form-label fw-bold">Categoría</label>
+                                    <select id="categoria" name="categoria" class="form-select" required><option value="" selected disabled>Elige una categoría</option><option>MOBA</option><option>SHOOTER</option><option>LUCHA</option><option>DEPORTES</option></select>
+                                    <div class="invalid-feedback">Elige una categoría.</div></div>
+                                <div class="col-12 col-md-6">
+                                    <label for="nick" class="form-label fw-bold">Nickname o equipo</label>
+                                    <div class="input-group has-validation"><span class="input-group-text">@</span><input type="text" id="nick" name="nick" class="form-control" placeholder="Jugador01" required pattern="[\w.\-]{3,20}"></div>
+                                    <div class="invalid-feedback">Usa de 3 a 20 caracteres (letras, números, punto o guion).</div></div>
+                                <div class="col-12"><label for="extras" class="form-label fw-bold">Juegos extra (mantén Ctrl para elegir varios)</label><select id="extras" name="extras" class="form-select" multiple size="4"><optgroup label="Equipos"><option>MOBA</option><option>SHOOTER</option></optgroup><optgroup label="Individuales"><option>LUCHA</option><option>DEPORTES</option></optgroup></select></div>
+                                <div class="col-12 col-md-6"><div class="form-label fw-bold">Tipo de participación</div><div class="form-check"><input class="form-check-input" type="radio" id="tipo1" name="tipo" value="Individual" required checked><label class="form-check-label" for="tipo1">Individual</label></div><div class="form-check"><input class="form-check-input" type="radio" id="tipo2" name="tipo" value="Equipo" ><label class="form-check-label" for="tipo2">Equipo</label></div><div class="invalid-feedback">Elige una opción.</div></div>
+                                <div class="col-12 col-md-6"><div class="form-label fw-bold">Plataforma</div><div class="btn-group w-100" role="group" aria-label="Plataforma"><input type="radio" class="btn-check" name="plataforma" id="pl1" value="PC" checked><label class="btn btn-outline-primary" for="pl1">PC</label><input type="radio" class="btn-check" name="plataforma" id="pl2" value="Consola"><label class="btn btn-outline-primary" for="pl2">Consola</label><input type="radio" class="btn-check" name="plataforma" id="pl3" value="Móvil"><label class="btn btn-outline-primary" for="pl3">Móvil</label></div></div>
+                                <div class="col-12"><label for="nivel" class="form-label fw-bold">Nivel de habilidad (de 1 a 10)</label><input type="range" id="nivel" name="nivel" class="form-range" min="1" max="10" step="1" value="5" list="marcasNivel"><datalist id="marcasNivel"><option value="1" label="1"></option><option value="5" label="5"></option><option value="10" label="10"></option></datalist></div>
+                                
+                                <div class="col-12 col-md-6">
+                                    <label for="colorEquipo" class="form-label fw-bold">Color de tu equipo</label>
+                                    <input type="color" id="colorEquipo" name="colorEquipo" class="form-control form-control-color w-100" value="#6d28d9">
+                                    <div class="invalid-feedback">Completa este campo.</div></div>
+                                <div class="col-12 col-md-6">
+                                    <label for="ciudad" class="form-label fw-bold">Ciudad</label>
+                                    <input list="ciudades" id="ciudad" name="ciudad" class="form-control" placeholder="Escribe o elige"><datalist id="ciudades"><option value="Latacunga"></option><option value="Quito"></option><option value="Ambato"></option><option value="Ibarra"></option><option value="Guayaquil"></option><option value="Cuenca"></option></datalist>
+                                    <div class="invalid-feedback">Completa este campo.</div></div>
+                        </div></fieldset></div>
+                        <!--Bloque 3: disponibilidad e intereses-->
+                        <div class="col-12 col-lg-6"><fieldset class="fs-bloque h-100"><legend><i class="bi bi-calendar2-heart-fill me-1"></i>Disponibilidad e intereses</legend><div class="row g-3">
+                                <div class="col-12 col-md-6"><div class="form-floating">
+                                    <input type="time" id="hora" name="hora" class="form-control" placeholder=" " >
+                                    <label for="hora">Horario preferido</label>
+                                    <div class="invalid-feedback">Elige una hora.</div></div></div>
+                                <div class="col-12 col-md-6"><div class="form-floating">
+                                    <input type="datetime-local" id="llegada" name="llegada" class="form-control" placeholder=" " >
+                                    <label for="llegada">Llegada al campus</label>
+                                    <div class="invalid-feedback">Elige fecha y hora.</div></div></div>
+                                <div class="col-12 col-md-6"><div class="form-floating">
+                                    <input type="month" id="mes" name="mes" class="form-control" placeholder=" " >
+                                    <label for="mes">Mes de inicio de práctica</label>
+                                    <div class="invalid-feedback">Elige un mes.</div></div></div>
+                                <div class="col-12 col-md-6"><div class="form-floating">
+                                    <input type="week" id="semana" name="semana" class="form-control" placeholder=" " >
+                                    <label for="semana">Semana de entrenamiento</label>
+                                    <div class="invalid-feedback">Elige una semana.</div></div></div>
+                                <div class="col-12 col-md-6"><div class="form-floating">
+                                    <input type="search" id="buscar" name="buscar" class="form-control" placeholder="Ej. Mario Kart" >
+                                    <label for="buscar">Busca un torneo anterior</label>
+                                    <div class="invalid-feedback"></div></div></div>
+                                <div class="col-12 col-md-6"><div class="form-floating">
+                                    <input type="number" id="acomp" name="acomp" class="form-control" placeholder=" " min="0" max="5" value="0">
+                                    <label for="acomp">Acompañantes</label>
+                                    <div class="invalid-feedback">Escribe un número de 0 a 5.</div></div></div>
+                                <div class="col-12"><div class="form-label fw-bold">Qué te interesa</div><div class="d-flex flex-wrap gap-3"><div class="form-check"><input class="form-check-input" type="checkbox" id="in1" name="interes" value="Torneos" ><label class="form-check-label" for="in1">Torneos</label></div><div class="form-check"><input class="form-check-input" type="checkbox" id="in2" name="interes" value="Cosplay" ><label class="form-check-label" for="in2">Cosplay</label></div><div class="form-check"><input class="form-check-input" type="checkbox" id="in3" name="interes" value="Concurso de videojuegos" ><label class="form-check-label" for="in3">Concurso de videojuegos</label></div><div class="form-check"><input class="form-check-input" type="checkbox" id="in4" name="interes" value="Charlas" ><label class="form-check-label" for="in4">Charlas</label></div></div></div>
+                                <div class="col-12"><div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="notif" name="notif" value="Quiero recibir novedades del evento" ><label class="form-check-label" for="notif">Quiero recibir novedades del evento</label></div></div>
+                                <div class="col-12 col-md-6"><label for="talla" class="form-label fw-bold">Talla de camiseta</label><select id="talla" name="talla" class="form-select"><option>S</option><option selected>M</option><option>L</option><option>XL</option></select></div>
+                                <div class="col-12 col-md-6"><label for="edicion" class="form-label fw-bold">Edición (solo lectura)</label><input type="text" id="edicion" class="form-control" value="Gamer Fest 2027" readonly><input type="hidden" name="origen" value="landing"></div>
+                        </div></fieldset></div>
+                        <!--Bloque 4: archivos y confirmación-->
+                        <div class="col-12 col-lg-6"><fieldset class="fs-bloque h-100"><legend><i class="bi bi-cloud-arrow-up-fill me-1"></i>Archivos y confirmación</legend><div class="row g-3">
+                                <div class="col-12">
+                                    <label for="comprobante" class="form-label fw-bold">Comprobante de pago (PDF, JPG o PNG, máx. 2 MB)</label>
+                                    <input type="file" id="comprobante" name="comprobante" class="form-control" accept=".pdf,.jpg,.jpeg,.png" required>
+                                    <div class="invalid-feedback">Adjunta un PDF, JPG o PNG de hasta 2 MB.</div></div>
+                                <div class="col-12">
+                                    <label for="avatar" class="form-label fw-bold">Fotos para tu perfil (opcional, hasta 3 imágenes)</label>
+                                    <input type="file" id="avatar" name="avatar" class="form-control" accept="image/*" multiple>
+                                    <div class="invalid-feedback">Elige hasta 3 imágenes JPG, PNG o WEBP de 1 MB cada una.</div></div>
+                                <div class="col-12"><label for="comentarios" class="form-label fw-bold">Comentarios</label><textarea id="comentarios" name="comentarios" class="form-control" rows="3" maxlength="300" placeholder="Cuéntanos algo más (máx. 300 caracteres)"></textarea></div>
+                                <div class="col-12"><label for="deshab" class="form-label fw-bold">Cupo asignado (campo deshabilitado)</label><input type="text" id="deshab" class="form-control" value="Se asigna al confirmar" disabled></div>
+                                <div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="acepto" name="acepto" required><label class="form-check-label" for="acepto">Acepto el reglamento del evento (demostración).</label><div class="invalid-feedback">Debes aceptar el reglamento para continuar.</div></div></div>
+                                <div class="col-12"><details class="card card-body py-2 small"><summary class="fw-bold">Ver reglamento (demostración)</summary><p class="mt-2 mb-0">Juega limpio, respeta a los demás participantes y sigue las indicaciones de los organizadores. Este texto es demostrativo.</p></details></div>
+                        </div></fieldset></div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <div id="estadoForm" role="status">
+                                <p class="estado estado-falta alert alert-warning py-2 px-3"><i class="bi bi-exclamation-triangle-fill me-2"></i>Completa los campos obligatorios para habilitar el envío.</p>
+                                <p class="estado estado-ok alert alert-success py-2 px-3"><i class="bi bi-check-circle-fill me-2"></i>¡Todo listo! Ya puedes enviar tu inscripción.</p>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <a href="#confirmacion" class="btn btn-gf btn-lg btn-enviar" aria-describedby="estadoForm"><i class="bi bi-send-fill me-2"></i>Enviar inscripción</a>
+                                <button type="reset" class="btn btn-outline-secondary btn-lg rounded-pill">Limpiar</button>
+                            </div>
+                        </div>
+                        <!--Confirmación demostrativa: se abre con :target, sin JavaScript-->
+                        <div id="confirmacion" class="overlay" role="dialog" aria-modal="true" aria-labelledby="tituloConfirmacion">
+                            <div class="card rounded-5" style="max-width:460px;width:100%;">
+                                <div class="card-body p-4 text-center">
+                                    <i class="bi bi-check-circle-fill text-success display-3"></i>
+                                    <h2 class="h5 titulo mt-2" id="tituloConfirmacion">¡Inscripción de demostración lista!</h2>
+                                    <p class="mb-3">Tu formulario está completo. Esto es solo una demostración: tus datos no se guardaron ni se enviaron.</p>
+                                    <a href="#inscripcion" class="btn btn-gf">Entendido</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
                 </div>
             </main>
 
